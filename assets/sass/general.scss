@@ -571,6 +571,15 @@ video {
         gap: 1.88rem;
     }
 }
+.counting {
+    display: inline-block;
+    transition: transform 0.2s, opacity 0.2s;
+    transform-origin: center bottom;
+}
+
+.counting.flip {
+    transform: rotateX(360deg);
+}
 
 /*-----------------------
     Global Styles
@@ -678,8 +687,87 @@ video {
     Global Styles
 -------------------------*/
 /*-----------------------
-    Global Styles
+    meet-founders
 -------------------------*/
+.meet-founders{
+    // background: url(../../assets/images/img/water-mark.svg);
+    // background-repeat: no-repeat;
+    // background-position: center bottom;
+    // background-size: contain;
+}
+.flex-card-founder{
+    @media (min-width: 790px){
+        justify-content: space-between;
+    }
+    @media (max-width: 789.98px){
+        justify-content: center;
+    }
+}
+.card-founder{
+    border-radius: 7.4375rem;
+    &::after{
+        content: ' ';
+        @include position( absolute , 0, 0, 0, 0);
+        background: url(../images/img/water-mark.svg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 533px;
+        z-index: -1;
+    }
+    &:first-child{
+        .card-body {
+            border-radius: 0rem 8.4375rem 6.5625rem 8.75rem;
+            &::after{
+                border-radius: 0rem 8.4375rem 6.5625rem 8.75rem;
+            }
+        }
+    }
+    &:last-child{
+        .card-body {
+            border-radius: 6.4375rem 0rem 6.5625rem 6.5rem;
+            &::after{
+                border-radius: 6.4375rem 0rem 6.5625rem 6.5rem;
+            }
+        }
+    }
+    .card-body {
+        height: 550px;
+        margin-bottom: 1.88rem;
+        img{
+            height: 100%;
+            margin-bottom: -10px;
+        }
+        &::after{
+            @include position( absolute , unset, 0, 0, 0);
+            content: ' ';
+            background: linear-gradient(215deg, #D9D9D9 21.67%, rgba(210, 163, 68, 0.48) 88.29%);
+            height: 23rem;
+            z-index: -1;
+            padding: 0 0.44rem 0 0.94rem;
+        }
+    }
+    .card-footer{
+        p{
+            color: map_get($theme-colors, dark);
+            font-family: $font-family-semibold;
+            @media (min-width: 1400px){
+                font-size: 2.1875rem;
+            }
+            @media (max-width: 1399.98px){
+                font-size: 1.5rem;
+            }
+        }
+        span{
+            color: map_get($theme-colors, dark);
+            @media (min-width: 1400px){
+                font-size: 1.5625rem;
+            }
+            @media (max-width: 1399.98px){
+                font-size: 1rem;
+            }
+        }
+    }
+}
 /*-----------------------
     our-certificates
 -------------------------*/

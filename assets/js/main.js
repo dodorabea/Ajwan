@@ -42,6 +42,8 @@
         }
       });
     });
+
+    
     
   /*====Back to top==== */
   // var amountScrolled = 200;
@@ -64,8 +66,8 @@
   /*=====AOS animation=====*/
   AOS.init({
     // Global settings:
-   //  duration: 900,
-   //  easing: 'ease-in-cubic',
+    duration: 900,
+    easing: 'ease-in-cubic',
     disable: 'mobile',
   });
   AOS.refresh();

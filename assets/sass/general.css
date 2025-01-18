@@ -1853,6 +1853,16 @@ html[dir=ltr] #preloader-background {
   gap: 1.88rem;
 }
 
+.counting {
+  display: inline-block;
+  transition: transform 0.2s, opacity 0.2s;
+  transform-origin: center bottom;
+}
+
+.counting.flip {
+  transform: rotateX(360deg);
+}
+
 /*-----------------------
     Global Styles
 -------------------------*/
@@ -1959,8 +1969,107 @@ html[dir=ltr] #preloader-background {
     Global Styles
 -------------------------*/
 /*-----------------------
-    Global Styles
+    meet-founders
 -------------------------*/
+@media (min-width: 790px) {
+  .flex-card-founder {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 789.98px) {
+  .flex-card-founder {
+    justify-content: center;
+  }
+}
+
+.card-founder {
+  border-radius: 7.4375rem;
+}
+.card-founder::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: url(../images/img/water-mark.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 533px;
+  z-index: -1;
+}
+html[dir=rtl] .card-founder::after {
+  right: 0;
+  left: 0;
+}
+html[dir=ltr] .card-founder::after {
+  right: 0;
+  left: 0;
+}
+.card-founder:first-child .card-body {
+  border-radius: 0rem 8.4375rem 6.5625rem 8.75rem;
+}
+.card-founder:first-child .card-body::after {
+  border-radius: 0rem 8.4375rem 6.5625rem 8.75rem;
+}
+.card-founder:last-child .card-body {
+  border-radius: 6.4375rem 0rem 6.5625rem 6.5rem;
+}
+.card-founder:last-child .card-body::after {
+  border-radius: 6.4375rem 0rem 6.5625rem 6.5rem;
+}
+.card-founder .card-body {
+  height: 550px;
+  margin-bottom: 1.88rem;
+}
+.card-founder .card-body img {
+  height: 100%;
+  margin-bottom: -10px;
+}
+.card-founder .card-body::after {
+  position: absolute;
+  top: unset;
+  bottom: 0;
+  content: " ";
+  background: linear-gradient(215deg, #D9D9D9 21.67%, rgba(210, 163, 68, 0.48) 88.29%);
+  height: 23rem;
+  z-index: -1;
+  padding: 0 0.44rem 0 0.94rem;
+}
+html[dir=rtl] .card-founder .card-body::after {
+  right: 0;
+  left: 0;
+}
+html[dir=ltr] .card-founder .card-body::after {
+  right: 0;
+  left: 0;
+}
+.card-founder .card-footer p {
+  color: #010101;
+  font-family: "SourceSerifPro-Semibold";
+}
+@media (min-width: 1400px) {
+  .card-founder .card-footer p {
+    font-size: 2.1875rem;
+  }
+}
+@media (max-width: 1399.98px) {
+  .card-founder .card-footer p {
+    font-size: 1.5rem;
+  }
+}
+.card-founder .card-footer span {
+  color: #010101;
+}
+@media (min-width: 1400px) {
+  .card-founder .card-footer span {
+    font-size: 1.5625rem;
+  }
+}
+@media (max-width: 1399.98px) {
+  .card-founder .card-footer span {
+    font-size: 1rem;
+  }
+}
+
 /*-----------------------
     our-certificates
 -------------------------*/
