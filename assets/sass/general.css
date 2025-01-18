@@ -1558,7 +1558,7 @@ html[dir=ltr] #preloader-background {
 }
 @media (max-width: 991.98px) {
   .header {
-    padding: 1rem;
+    padding: 0 1rem;
   }
 }
 .header.scrolled {
@@ -1587,8 +1587,15 @@ html[dir=ltr] #preloader-background {
   }
 }
 
-.brand img {
-  width: 75px;
+@media (min-width: 992px) {
+  .brand img {
+    width: 75px;
+  }
+}
+@media (max-width: 991.98px) {
+  .brand img {
+    width: 55px;
+  }
 }
 
 .menu {
