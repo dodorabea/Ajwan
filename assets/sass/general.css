@@ -1417,9 +1417,18 @@ video {
 }
 
 .center-title .line {
-  width: 100%;
   height: 1px;
   background: #010101;
+}
+@media (min-width: 768px) {
+  .center-title .line {
+    width: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  .center-title .line {
+    width: 50%;
+  }
 }
 .center-title h3 {
   color: #010101;
@@ -1442,7 +1451,7 @@ video {
 }
 @media (max-width: 767.98px) {
   .center-title h3 {
-    font-size: 1.125rem;
+    font-size: 1.75rem;
   }
 }
 
@@ -1966,8 +1975,94 @@ html[dir=ltr] #preloader-background {
     Global Styles
 -------------------------*/
 /*-----------------------
-    Global Styles
+    carriers
 -------------------------*/
+.carriers {
+  padding: 40px 0;
+}
+
+.accordion-button {
+  display: flex;
+  align-items: center;
+  min-height: 4.75rem;
+  padding: 0 1rem;
+}
+
+.accordion-button:not(.collapsed)::after,
+.accordion-button::after {
+  display: none;
+}
+
+.accordion-button:not(.collapsed) {
+  border-radius: 0.625rem;
+  border-bottom: 1px solid #C3B7B7 !important;
+  background: #D9D9D9;
+}
+
+.accordion-item {
+  border-radius: 0.625rem;
+  border: 1px solid #D4CACA;
+  margin-bottom: 2.5rem;
+  overflow: hidden;
+  min-height: 4.75rem;
+}
+
+.accordion-button {
+  box-shadow: unset !important;
+  outline: 0 !important;
+  border: 0 !important;
+  border-color: unset !important;
+}
+
+.accordion-item:not(:first-of-type) {
+  border-top: 1px solid #C3B7B7;
+}
+
+.header-accordion p {
+  font-size: 1.375rem;
+  font-family: "SourceSerifPro-Semibold";
+  color: #010101;
+}
+.header-accordion span {
+  font-size: 1.125rem;
+  color: #D2A344;
+  font-family: "SourceSerifPro-Regular";
+}
+
+.accordion-body p {
+  margin-bottom: 1.31rem;
+  color: #7E7676;
+}
+@media (min-width: 790px) {
+  .accordion-body p {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 789.98px) {
+  .accordion-body p {
+    font-size: 1rem;
+  }
+}
+.accordion-body .btn {
+  min-height: 2.31rem;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  color: #010101;
+}
+@media (min-width: 790px) {
+  .accordion-body .btn {
+    width: 10rem;
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 789.98px) {
+  .accordion-body .btn {
+    width: auto;
+    padding: 0rem 2rem;
+    font-size: 1rem;
+  }
+}
+
 /*-----------------------
     meet-founders
 -------------------------*/
@@ -2111,29 +2206,33 @@ html[dir=ltr] .our-latest-news .card-news .card-header span {
 .our-latest-news .card-news .card-body {
   min-height: 2rem;
 }
-.our-latest-news .card-news .card-body p {
+.our-latest-news .card-news .card-body p, .our-latest-news .card-news .card-body a {
   color: #000;
   font-family: "SourceSerifPro-Semibold";
 }
-html[dir=rtl] .our-latest-news .card-news .card-body p {
+html[dir=rtl] .our-latest-news .card-news .card-body p, html[dir=rtl] .our-latest-news .card-news .card-body a {
   padding-left: 1rem;
 }
-html[dir=ltr] .our-latest-news .card-news .card-body p {
+html[dir=ltr] .our-latest-news .card-news .card-body p, html[dir=ltr] .our-latest-news .card-news .card-body a {
   padding-right: 1rem;
 }
 @media (min-width: 992px) {
-  .our-latest-news .card-news .card-body p {
+  .our-latest-news .card-news .card-body p, .our-latest-news .card-news .card-body a {
     font-size: 1.25rem;
   }
 }
 @media (max-width: 991.98px) {
-  .our-latest-news .card-news .card-body p {
+  .our-latest-news .card-news .card-body p, .our-latest-news .card-news .card-body a {
     font-size: 1rem;
   }
 }
 
 .brand-video {
   height: 750px;
+}
+.brand-video img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .brand-video video {
   position: absolute;
@@ -2215,13 +2314,16 @@ footer {
   background: #1E1E1E;
   margin-top: 2rem;
 }
+footer a {
+  color: #FFFFFF;
+}
 footer .footer-info ul {
   gap: 1.44rem;
 }
 footer .footer-info ul li {
   gap: 0.88rem;
 }
-footer .footer-info ul li span {
+footer .footer-info ul li span, footer .footer-info ul li a {
   color: #FFFFFF;
   font-size: 0.875rem;
 }
@@ -2240,5 +2342,8 @@ footer .footer-nav li a {
 }
 footer .copy-right {
   font-size: 0.75rem;
+  color: #D2A344;
+}
+footer .copy-right a {
   color: #D2A344;
 }/*# sourceMappingURL=general.css.map */

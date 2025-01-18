@@ -117,9 +117,14 @@ video {
 
 .center-title {
     .line {
-        width: 100%;
         height: 1px;
         background: map_get($theme-colors, dark);
+        @media (min-width: 768px){
+            width: 100%;
+        }
+        @media (max-width: 767.98px){
+            width: 50%;
+        }
     }
 
     h3 {
@@ -139,7 +144,7 @@ video {
         }
 
         @media (max-width: 767.98px) {
-            font-size: 1.125rem;
+            font-size: 1.75rem;
         }
     }
 }
@@ -695,8 +700,83 @@ video {
     Global Styles
 -------------------------*/
 /*-----------------------
-    Global Styles
+    carriers
 -------------------------*/
+.carriers{
+    padding: 40px 0;
+}
+.accordion-button{
+    display: flex;
+    align-items: center;
+    min-height: 4.75rem;
+    padding: 0 1rem;
+}
+.accordion-button:not(.collapsed)::after,
+.accordion-button::after{
+    display: none;
+}
+.accordion-button:not(.collapsed){
+    border-radius: 0.625rem;
+    border-bottom: 1px solid #C3B7B7 !important;
+    background: #D9D9D9;
+}
+.accordion-item{
+    border-radius: 0.625rem;
+    border: 1px solid #D4CACA;
+    margin-bottom: 2.5rem;
+    overflow: hidden;
+    min-height: 4.75rem;
+}
+.accordion-button{
+    box-shadow: unset !important;
+    outline: 0 !important;
+    border: 0 !important;
+    border-color: unset !important;
+}
+.accordion-item:not(:first-of-type){
+    border-top: 1px solid #C3B7B7;
+}
+.header-accordion{
+    p{
+        font-size: 1.375rem;
+        font-family: $font-family-semibold;
+        color: map_get($theme-colors, dark);
+    }
+    span{
+        font-size: 1.125rem;
+        color: map_get($theme-colors, primary);
+        font-family: $font-family-base;
+    }
+}
+.accordion-body {
+    p{
+        margin-bottom: 1.31rem;
+        color: #7E7676;
+        @media (min-width: 790px) {
+            font-size: 1.125rem;
+        }
+    
+        @media (max-width: 789.98px) {
+            font-size: 1rem;
+        }
+    }
+    .btn{
+        
+        min-height: 2.31rem;
+        text-transform: uppercase;
+        border-radius: 1rem;
+        color: map_get($theme-colors, dark);
+        @media (min-width: 790px) {
+            width: 10rem;
+            font-size: 1.125rem;
+        }
+        @media (max-width: 789.98px) {
+            width: auto;
+            padding: 0rem 2rem;
+            font-size: 1rem;
+        }
+    }
+}
 /*-----------------------
     meet-founders
 -------------------------*/
@@ -828,7 +908,7 @@ video {
         .card-body {
             min-height: 2rem;
 
-            p {
+            p,a {
                 @include property_dir('padding', 'left', 1rem);
                 color: #000;
                 font-family: $font-family-semibold;
@@ -847,7 +927,9 @@ video {
 
 .brand-video {
     height: 750px;
-
+    img{
+        object-fit: cover;
+    }
     video {
         position: absolute;
         top: 50%;
@@ -913,6 +995,9 @@ video {
     Footer 
 -------------------------*/
 footer{
+    a{
+        color: #FFFFFF;
+    }
     padding: 2rem 0 1.5rem 0;
     background: #1E1E1E;
     margin-top: 2rem;
@@ -921,7 +1006,7 @@ footer{
             gap: 1.44rem;
             li{
                 gap: 0.88rem;
-                span{
+                span, a{
                     color: #FFFFFF;
                     font-size: 0.875rem;
                 }
@@ -949,6 +1034,9 @@ footer{
         }
     }
     .copy-right{
+        a{
+            color: map_get($theme-colors, primary);
+        }
         font-size: 0.75rem;
         color: map_get($theme-colors, primary);
     }
