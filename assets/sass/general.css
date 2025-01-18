@@ -2170,15 +2170,75 @@ html[dir=ltr] .brand-video::after {
   padding: 40px 0;
 }
 .brands-section .brands-card {
-  padding: 0.66rem;
+  padding: 0.66rem 0.2rem;
   border-radius: 1.125rem;
   border: 1px solid #CFBFBF;
 }
 .brands-section .brands-card .header-part {
-  min-height: 350px;
+  height: 280px;
 }
 .brands-section .brands-card .body-part p {
-  color: #000;
+  color: #010101;
   font-size: 0.75rem;
   margin-bottom: 0.56rem;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 36px;
+}
+.brands-section .brands-card .body-part .btn-visit {
+  font-weight: 500;
+  color: #010101;
+  margin: 0 auto;
+  border-radius: 8px;
+  min-height: 48px;
+}
+@media (min-width: 992px) {
+  .brands-section .brands-card .body-part .btn-visit {
+    width: 60%;
+  }
+}
+@media (max-width: 991.98px) {
+  .brands-section .brands-card .body-part .btn-visit {
+    width: 90%;
+  }
+}
+
+/*-----------------------
+    Footer 
+-------------------------*/
+footer {
+  padding: 2rem 0 1.5rem 0;
+  background: #1E1E1E;
+  margin-top: 2rem;
+}
+footer .footer-info ul {
+  gap: 1.44rem;
+}
+footer .footer-info ul li {
+  gap: 0.88rem;
+}
+footer .footer-info ul li span {
+  color: #FFFFFF;
+  font-size: 0.875rem;
+}
+footer .footer-nav .link:first-child {
+  padding-bottom: 1.19rem;
+}
+footer .footer-nav .link:last-child {
+  padding-top: 1.19rem;
+  border-top: 0.1875rem solid #3C3939;
+}
+footer .footer-nav li a {
+  text-transform: capitalize;
+  font-size: 1rem;
+  color: #D2A344;
+  font-family: "SourceSerifPro-Semibold";
+}
+footer .copy-right {
+  font-size: 0.75rem;
+  color: #D2A344;
 }/*# sourceMappingURL=general.css.map */
