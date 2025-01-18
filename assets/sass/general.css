@@ -1752,6 +1752,13 @@ html[dir=ltr] #preloader-background {
   transform: rotate(-135deg);
 }
 
+header.header-position-relative .menu-inner .menu-item .menu-link {
+  color: #010101;
+}
+header.header-position-relative .menu-inner .menu-item .menu-link.active {
+  color: #D2A344;
+}
+
 /*-----------------------
     About Us Styles
 -------------------------*/
@@ -1969,11 +1976,103 @@ html[dir=ltr] #preloader-background {
     Global Styles
 -------------------------*/
 /*-----------------------
-    Global Styles
+    contact-Us
 -------------------------*/
+.contact-Us {
+  padding: 4rem 0;
+}
+@media (min-width: 790px) {
+  .contact-Us .social-icon img {
+    height: 60px;
+  }
+}
+@media (max-width: 789.98px) {
+  .contact-Us .social-icon img {
+    height: 40px;
+  }
+}
+
+.responsive-map {
+  overflow: hidden;
+  padding-bottom: 95.25%;
+  position: relative;
+  height: 0;
+  border-radius: 0.625rem;
+  border: 1px solid #BBB1B1;
+}
+.responsive-map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.contact-Us-info .item {
+  padding: 1rem;
+  border-radius: 1.0625rem;
+  border: 1px solid #CFCFCF;
+  background: #FBFBFB;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.contact-Us-info .item:not(:last-child) {
+  margin-bottom: 1.88rem;
+}
+.contact-Us-info .item .img {
+  width: 4rem;
+  min-width: 4rem;
+  max-width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  background: #231F20;
+}
+.contact-Us-info .item .img img {
+  height: 45px;
+}
+.contact-Us-info .item .des span, .contact-Us-info .item .des a {
+  color: #010101;
+  font-size: 0.894rem;
+}
+
 /*-----------------------
-    Global Styles
+    news-details
 -------------------------*/
+.news-details .news-details-body {
+  margin-bottom: 3rem;
+}
+.news-details .news-details-body h3 {
+  color: #010101;
+  font-family: "SourceSerifPro-Semibold";
+}
+@media (min-width: 790px) {
+  .news-details .news-details-body h3 {
+    font-size: 1.875rem;
+  }
+}
+@media (max-width: 789.98px) {
+  .news-details .news-details-body h3 {
+    font-size: 1.25rem;
+  }
+}
+.news-details .news-details-body .date {
+  color: #010101;
+  font-size: 0.9375rem;
+  font-family: "SourceSerifPro-Semibold";
+}
+.news-details .news-details-body p {
+  color: #010101;
+}
+@media (min-width: 790px) {
+  .news-details .news-details-body p {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 789.98px) {
+  .news-details .news-details-body p {
+    font-size: 1rem;
+  }
+}
+
 /*-----------------------
     carriers
 -------------------------*/
