@@ -1,68 +1,15 @@
 (function ($) {
   "use strict";
-  /*====Dom is loaded==== */
+  /* ========================================== 
+      Loading
+  ========================================== */
   var $loader = document.querySelector('#preloader-background');
-  
   window.onload = function() {
     setTimeout(function() {
       $loader.remove(); 
     }); 
   };
-   /*==========Counter=========*/
-   $(window).on('scroll', function () {
-      $('.counting').each(function () {
-        var $this = $(this),
-            countTo = $this.attr('data-count'),
-            hasAnimated = $this.data('animated'); // Check if animation has already run
-    
-        // Check if the element is in view
-        if ($this.offset().top <= $(window).scrollTop() + $(window).height() && 
-            $this.offset().top + $this.outerHeight() >= $(window).scrollTop()) {
-          
-          // Reset animation if it has already run
-          if (hasAnimated) {
-            $this.text('0');
-            $this.data('animated', false);
-          }
-    
-          // Start the counting animation
-          $({ countNum: 0 }).animate({
-            countNum: countTo
-          }, {
-            duration: 2000,
-            easing: 'linear',
-            step: function () {
-              $this.text(Math.floor(this.countNum));
-            },
-            complete: function () {
-              $this.text(this.countNum);
-              $this.data('animated', true); // Mark as animated
-            }
-          });
-        }
-      });
-    });
 
-    
-    
-  /*====Back to top==== */
-  // var amountScrolled = 200;
-  // var amountScrolledNav = 25;
-
-  // $(window).scroll(function () {
-  //   if ($(window).scrollTop() > amountScrolled) {
-  //     $('button.back-to-top').addClass('show');
-  //   } else {
-  //     $('button.back-to-top').removeClass('show');
-  //   }
-  // });
-
-  // $('button.back-to-top').click(function () {
-  //   $('html, body').animate({
-  //     scrollTop: 0
-  //   }, 800);
-  //   return false;
-  // });
   /*=====AOS animation=====*/
   AOS.init({
     // Global settings:
@@ -70,8 +17,41 @@
     easing: 'ease-in-cubic',
     disable: 'mobile',
   });
-  AOS.refresh();
- 
+   AOS.refresh();
+
+    /*=====Our certificates=====*/
+  var swiperCertificates = new Swiper(".mySwiper.certificates-slider", {
+    slidesPerView: 1.5,
+     spaceBetween: 10,
+     speed:18000,
+     direction: 'horizontal',
+     loop: true,
+     autoplay: 
+     {
+       delay: 0,
+     },
+    freeMode: true,
+    breakpoints: {
+        0: {
+            slidesPerView: 1.5,
+        },
+        400: {
+            slidesPerView: 1.5,
+        },
+        880: {
+            slidesPerView: 2.5,
+        },
+        1025: {
+            slidesPerView: 2.5,
+        },
+        1366: {
+            slidesPerView: 2.5,
+        }
+    }
+  });
+
+
+
 })(jQuery);
 const navbarMenu = document.getElementById("menu");
 const burgerMenu = document.getElementById("burger");

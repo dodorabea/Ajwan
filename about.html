@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
     <!-- meta tag -->
@@ -12,30 +11,25 @@
     <!-- favicon -->
     <link rel="apple-touch-icon" href="assets/images/fav/fav.png">
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav/fav.png">
-    <!-- bootstrap v5.3.3 css -->
-    <!-- <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.rtl.min.css"> -->
-    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
-    <!-- Aos Animation css -->
-    <link rel="stylesheet" type="text/css" href="assets/aos/css/aos.css">
+    <!-- bootstrap v5  css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.rtl.css"> -->
     <!-- Swiper Slider css -->
     <link rel="stylesheet" type="text/css" href="assets/swiper/css/swiper-bundle.min.css">
+    <!--AOS animation-->
+    <link rel="stylesheet" type="text/css" href="assets/aos/css/aos.css">
     <!-- style css -->
     <link rel="stylesheet" type="text/css" href="assets/sass/general.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-        rel="stylesheet">
     <script src="assets/js/gsap.min.js"></script>
     <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        <![endif]-->
 </head>
 
 <body id="vertical">
     <!-- ============================================================== -->
-    <!-- preloader -->
+    <!-- Loading  style.css -->
     <!-- ============================================================== -->
     <div id="preloader-background">
         <div id="circle-loader"></div>
@@ -53,9 +47,9 @@
                 <div class="menu" id="menu">
                     <ul class="menu-inner">
                         <li class="menu-item"><a href="index.html" class="menu-link">home</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">about us</a></li>
+                        <li class="menu-item"><a href="about.html" class="menu-link active">about us</a></li>
                         <li class="menu-item"><a href="brands.html" class="menu-link">Brands</a></li>
-                        <li class="menu-item"><a href="carriers.html" class="menu-link active">carriers</a></li>
+                        <li class="menu-item"><a href="carriers.html" class="menu-link">carriers</a></li>
                         <li class="menu-item"><a href="new.html" class="menu-link">news</a></li>
                         <li class="menu-item"><a href="contact-us.html" class="menu-link">contact Us</a></li>
                         <li class="menu-item"><a href="#" class="menu-link">العربيه</a></li>
@@ -73,88 +67,94 @@
     <!-- Intro -->
     <!-- ============================================================== -->
     <section class="brand-video overflow-hidden position-relative">
-        <img class="w-100 h-100 img-fluid" src="assets/images/img/career.png" />
+        <video autoplay muted loop preload="auto" autoplay="autoplay">
+            <source src="assets/images/video/brand-video.mp4" type="video/mp4">
+            <source src="assets/images/video/intro.webm" type="video/webm">
+        </video>
     </section>
     <!-- ============================================================== -->
-    <!-- carriers -->
+    <!-- Our Story -->
     <!-- ============================================================== -->
-    <section class="carriers">
+     <section class="our-story">
+        <div class="container position-relative" style="min-height: 25rem;">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="section-about">
+                    <img class="img-fluid" src="assets/images/img/about.png" alt="image"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-9 col-md-6 col-sm-12">
+                   <div class="text-gray-part">
+                    <div class="text">
+                        <h3>Our Story</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Elit iaculis nibh tristique blandit id. Vulputate lacus quis platea placerat. Velit quis a ut et viverra porttitor auctor.
+                        </p>
+                    </div>
+                   </div>
+                </div>
+                
+            </div>
+        </div>
+     </section>
+   
+    <!-- ============================================================== -->
+    <!--  Meet the Founders -->
+    <!-- ============================================================== -->
+   
+  
+   
+    <!-- ============================================================== -->
+    <!-- Our latest News  -->
+    <!-- ============================================================== -->
+    <section class="our-latest-news padding-section">
         <div class="container">
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button d-block" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <div class="header-accordion d-flex flex-wrap align-items-center row-gap-3 justify-content-between">
-                                <p>HR Manger</p>
-                                <div class="d-flex align-items-center gap-2 date-carrires">
-                                    <img src="assets/images/icon/calendar.svg" alt="icon"/>
-                                    <span> 25/12/2024 </span>
-                                </div>
-                            </div>
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur. Mi bibendum condimentum at morbi accumsan scelerisque id metus dolor. Facilisis tincidunt nullam etiam tellus. Rutrum nibh urna imperdiet pharetra volutpat massa tortor arcu. Semper pulvinar pretium id libero tellus massa. Id netus dis netus id. Viverra at aenean turpis arcu elementum faucibus parturient a. Imperdiet mi etiam sit pharetra gravida ullamcorper. Vulputate massa pellentesque velit malesuada in adipiscing semper nunc rhoncus. Tellus non arcu at etiam euismod. Ullamcorper viverra parturient elementum amet porta velit lectus. Egestas morbi sem mauris amet diam eu ullamcorper in fringilla.
-                            </p>
-                            <a href="#" class="btn btn-outline-primary d-flex align-items-center justify-content-center">apply</a>
+            <div class="center-title text-center mb-5">
+                <h3 class="w-100">Our latest News </h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="card-news">
+                        <div class="card-header position-relative mb-4">
+                            <img class="w-100 h-100" src="assets/images/img/news-one.png" alt="img" />
+                            <span class="d-flex align-items-center justify-content-center">December</span>
+                        </div>
+                        <div class="card-body d-flex align-items-center">
+                            <a href="news-details.html" class="one-line">
+                                Lorem ipsum dolor sit ,Lorem ipsum
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button d-block collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            <div class="header-accordion d-flex row-gap-3 flex-wrap align-items-center justify-content-between">
-                                <p>Restaurant Manger </p>
-                                <div class="d-flex align-items-center gap-2 date-carrires">
-                                    <img src="assets/images/icon/calendar.svg" alt="icon"/>
-                                    <span> 25/12/2024 </span>
-                                </div>
-                            </div>
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="accordion-body">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur. Mi bibendum condimentum at morbi accumsan scelerisque id metus dolor. Facilisis tincidunt nullam etiam tellus. Rutrum nibh urna imperdiet pharetra volutpat massa tortor arcu. Semper pulvinar pretium id libero tellus massa. Id netus dis netus id. Viverra at aenean turpis arcu elementum faucibus parturient a. Imperdiet mi etiam sit pharetra gravida ullamcorper. Vulputate massa pellentesque velit malesuada in adipiscing semper nunc rhoncus. Tellus non arcu at etiam euismod. Ullamcorper viverra parturient elementum amet porta velit lectus. Egestas morbi sem mauris amet diam eu ullamcorper in fringilla.
-                                </p>
-                                <a href="#" class="btn btn-outline-primary d-flex align-items-center justify-content-center">apply</a>
-                            </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="card-news">
+                        <div class="card-header position-relative mb-4">
+                            <img class="w-100 h-100" src="assets/images/img/news-two.png" alt="img" />
+                            <span class="d-flex align-items-center justify-content-center">July,24</span>
+                        </div>
+                        <div class="card-body d-flex align-items-center">
+                            <a href="news-details.html" class="one-line">
+                                Lorem ipsum dolor sit ,Lorem ipsum Lorem ipsum dolor sit ,Lorem ipsum
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button d-block collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            <div class="header-accordion d-flex flex-wrap align-items-center justify-content-between row-gap-3">
-                                <p>IT technical</p>
-                                <div class="d-flex align-items-center gap-2 date-carrires">
-                                    <img src="assets/images/icon/calendar.svg" alt="icon"/>
-                                    <span> 25/12/2024 </span>
-                                </div>
-                            </div>
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="accordion-body">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur. Mi bibendum condimentum at morbi accumsan scelerisque id metus dolor. Facilisis tincidunt nullam etiam tellus. Rutrum nibh urna imperdiet pharetra volutpat massa tortor arcu. Semper pulvinar pretium id libero tellus massa. Id netus dis netus id. Viverra at aenean turpis arcu elementum faucibus parturient a. Imperdiet mi etiam sit pharetra gravida ullamcorper. Vulputate massa pellentesque velit malesuada in adipiscing semper nunc rhoncus. Tellus non arcu at etiam euismod. Ullamcorper viverra parturient elementum amet porta velit lectus. Egestas morbi sem mauris amet diam eu ullamcorper in fringilla.
-                                </p>
-                                <a href="#" class="btn btn-outline-primary d-flex align-items-center justify-content-center">apply</a>
-                            </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="card-news">
+                        <div class="card-header position-relative mb-4">
+                            <img class="w-100 h-100" src="assets/images/img/news-one.png" alt="img" />
+                            <span class="d-flex align-items-center justify-content-center">December</span>
+                        </div>
+                        <div class="card-body d-flex align-items-center">
+                            <a href="news-details.html" class="one-line">
+                                Lorem ipsum dolor sit ,Lorem ipsum
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- ============================================================== -->
     <!-- Footer -->
     <!-- ============================================================== -->
@@ -223,12 +223,13 @@
             </div>
         </div>
     </footer>
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ============================================================== -->
+    <!-- Scriptts -->
+    <!-- ============================================================== -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <!--JQuery Js-->
-    <script src="assets/jq/jQuery.js"></script>
-    <!-- AOS JS -->
-    <script src="assets/aos/js/aos.js"></script>
+    <script src="assets/js/jQuery.js"></script>
     <!--ScrollTrigger-->
     <script src="assets/js/ScrollTrigger.min.js"></script>
     <!--lenis-->
@@ -237,6 +238,8 @@
     <script src="assets/js/script_lenis.js"></script>
     <!-- Swiper JS -->
     <script src="assets/swiper/js/swiper.min.js"></script>
+    <!--AOS Animation-->
+    <script src="assets/aos/js/aos.js"></script>
     <!--Main Js-->
     <script src="assets/js/main.js"></script>
 </body>

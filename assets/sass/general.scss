@@ -38,7 +38,7 @@ body {
     overflow-x: hidden !important;
     font-family: $font-family-base;
     font-weight: 400;
-    background: map_get($theme-colors, white);
+    background: map_get($theme-colors, mainBgColor);
     font-style: normal;
 
     &.modal-open {
@@ -833,21 +833,15 @@ header {
     @media (max-width: 789.98px) {
         justify-content: center;
     }
+    background: url(../images/img/water-mark.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 533px;
+    z-index: -1;
 }
 
 .card-founder {
     border-radius: 7.4375rem;
-
-    &::after {
-        content: ' ';
-        @include position(absolute, 0, 0, 0, 0);
-        background: url(../images/img/water-mark.png);
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-size: 533px;
-        z-index: -1;
-    }
-
     &:first-child {
         .card-body {
             border-radius: 0rem 8.4375rem 6.5625rem 8.75rem;
@@ -880,6 +874,7 @@ header {
         &::after {
             @include position(absolute, unset, 0, 0, 0);
             content: ' ';
+            width: 100%;
             background: linear-gradient(215deg, #D9D9D9 21.67%, rgba(210, 163, 68, 0.48) 88.29%);
             height: 23rem;
             z-index: -1;
@@ -918,12 +913,7 @@ header {
 /*-----------------------
     our-certificates
 -------------------------*/
-.our-certificates {
-    .swiper-slide {
-        height: 140px;
 
-    }
-}
 
 /*-----------------------
     our-latest-news 
@@ -972,7 +962,12 @@ header {
 }
 
 .brand-video {
-    height: 750px;
+    @media (min-width: 992px) {
+        height: 750px;
+    }
+    @media (max-width: 991.98px) {
+        height: 400px;
+    }
 
     img {
         object-fit: cover;
@@ -1053,7 +1048,19 @@ header {
         height: 100%;
     }
 }
-
+/*-----------------------
+    our-story 
+-------------------------*/
+.our-story{
+    .text-gray-part{
+        border-radius: 1.5rem;
+        background: #E4E4E4;
+        padding: 3rem 1rem 1rem 3rem;
+        .text{
+            max-width: 60%;
+        }
+    }
+}
 /*-----------------------
     Footer 
 -------------------------*/
@@ -1112,4 +1119,7 @@ footer {
         font-size: 0.75rem;
         color: map_get($theme-colors, primary);
     }
+}
+.swiper-wrapper{
+    height: auto !important;
 }
