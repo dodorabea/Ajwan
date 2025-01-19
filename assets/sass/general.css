@@ -1101,6 +1101,54 @@ html[dir=ltr] .brand-video::after {
   left: 0;
 }
 
+.absolute-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 11;
+}
+.absolute-text h3 {
+  color: #FFF;
+  margin-bottom: 1rem;
+  font-family: "SourceSerifPro-Bold";
+}
+@media (min-width: 1300px) {
+  .absolute-text h3 {
+    font-size: 5rem;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1299px) {
+  .absolute-text h3 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .absolute-text h3 {
+    font-size: 2.4rem;
+  }
+}
+.absolute-text p {
+  color: #FFF;
+  font-family: "SourceSerifPro-Semibold";
+}
+@media (min-width: 1300px) {
+  .absolute-text p {
+    font-size: 3.125rem;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1299px) {
+  .absolute-text p {
+    font-size: 2.25rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .absolute-text p {
+    font-size: 1.5rem;
+  }
+}
+
 /*-----------------------
     brands-section 
 -------------------------*/
@@ -1108,12 +1156,20 @@ html[dir=ltr] .brand-video::after {
   padding: 40px 0;
 }
 .brands-section .brands-card {
-  padding: 0.66rem 0.2rem;
+  padding: 0.66rem 1.5rem;
   border-radius: 1.125rem;
   border: 1px solid #CFBFBF;
 }
 .brands-section .brands-card .header-part {
-  height: 280px;
+  height: 350px;
+}
+.brands-section .brands-card .header-part img {
+  width: 220px;
+  filter: grayscale(1);
+  transition: all 1s ease-out;
+}
+.brands-section .brands-card:hover .header-part img {
+  filter: unset;
 }
 .brands-section .brands-card .body-part p {
   color: #010101;
