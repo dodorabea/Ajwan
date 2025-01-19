@@ -1001,9 +1001,6 @@ html[dir=ltr] .card-founder .card-body::after {
 }
 
 /*-----------------------
-    our-certificates
--------------------------*/
-/*-----------------------
     our-latest-news 
 -------------------------*/
 .our-latest-news .card-news .card-header {
@@ -1254,6 +1251,54 @@ html[dir=ltr] .brand-video::after {
 }
 .our-story .text-gray-part .text {
   max-width: 60%;
+}
+
+/*-----------------------
+    about-goals
+-------------------------*/
+.about-goals .box img {
+  height: 3.75rem;
+  display: block;
+  margin: 0 auto 0.63rem auto;
+}
+.about-goals .box h4 {
+  color: #D2A344;
+  text-transform: uppercase;
+  margin-bottom: 0.62rem;
+  font-family: "SourceSerifPro-Semibold";
+}
+@media screen and (min-width: 1370px) {
+  .about-goals .box h4 {
+    font-size: 2.1875rem;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1369.98px) {
+  .about-goals .box h4 {
+    font-family: 1.78rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .about-goals .box h4 {
+    font-size: 1.5rem;
+  }
+}
+.about-goals .box p {
+  color: #010101;
+}
+@media screen and (min-width: 1370px) {
+  .about-goals .box p {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1369.98px) {
+  .about-goals .box p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .about-goals .box p {
+    font-size: 1rem;
+  }
 }
 
 /*-----------------------

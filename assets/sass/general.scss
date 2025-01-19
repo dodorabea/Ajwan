@@ -911,12 +911,6 @@ header {
         }
     }
 }
-
-/*-----------------------
-    our-certificates
--------------------------*/
-
-
 /*-----------------------
     our-latest-news 
 -------------------------*/
@@ -1138,6 +1132,48 @@ header {
             max-width: 60%;
         }
     }
+}
+/*-----------------------
+    about-goals
+-------------------------*/
+.about-goals{
+    .box{
+        img{
+            height: 3.75rem;
+            display: block;
+            margin: 0 auto 0.63rem auto;
+        }
+        h4{
+            color: map_get($theme-colors, primary);
+            text-transform: uppercase;
+            margin-bottom: 0.62rem;
+            font-family: $font-family-semibold;
+            @media screen and (min-width: 1370px){
+                font-size: 2.1875rem;
+            }
+            @media screen and (min-width: 992px) and (max-width: 1369.98px) {
+                font-family: 1.78rem;
+            }
+        
+            @media (max-width: 991.98px){
+                font-size: 1.5rem;
+            }
+           
+        }
+        p{
+            color: map_get($theme-colors, dark);
+            @media screen and (min-width: 1370px){
+                font-size: 1.25rem;
+            }
+            @media screen and (min-width: 992px) and (max-width: 1369.98px) {
+                font-size: 1rem;
+            }
+        
+            @media (max-width: 991.98px){
+                font-size: 1rem;
+            }
+        }
+    }   
 }
 /*-----------------------
     Footer 
