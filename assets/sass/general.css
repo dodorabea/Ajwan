@@ -240,6 +240,10 @@ h6 {
   margin-bottom: 0;
 }
 
+.row-gap-3 {
+  row-gap: 1rem;
+}
+
 /*-----------------------
     ganeral Styles
 -------------------------*/
