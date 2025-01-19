@@ -1027,6 +1027,29 @@ header {
         }
     }
 }
+.image-banner{
+    .absolute-text{
+        h4{
+            color: #FFF;
+            margin-bottom: 2.5rem;
+            font-family: $font-family-Bold;
+            @media (min-width: 1300px){
+                font-size: 3.125rem;
+            }
+            @media screen and (min-width: 992px) and (max-width: 1299px){
+                font-size: 2.125rem;
+            }
+            @media (max-width: 991.98px){
+                font-size: 1.125rem;
+            }
+        }
+        span{
+            color: #FFF;
+            font-family: $font-family-base;
+            font-size: 1.125rem;
+        }
+    }
+}
 /*-----------------------
     brands-section 
 -------------------------*/
@@ -1037,7 +1060,12 @@ header {
         padding: 0.66rem 1.5rem;
         border-radius: 1.125rem;
         border: 1px solid #CFBFBF;
-
+        .header-news-part{
+            height: 280px;
+            img{
+                height: 100%;
+            }
+        }
         .header-part {
             height: 350px;
             img{
