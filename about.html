@@ -76,14 +76,12 @@
     <!-- Our Story -->
     <!-- ============================================================== -->
     <section class="our-story">
-        <div class="container position-relative" style="min-height: 25rem;">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="section-about">
-                    <img class="img-fluid" src="assets/images/img/about.png" alt="image" />
+        <div class="container position-relative">
+            <div class="description position-relative">
+                <div class="section-image overflow-hidden">
+                    <img class="img-fluid w-100 h-100" src="assets/images/img/about.png" alt="image" />
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-9 col-md-6 col-sm-12">
+                <div class="col-lg-9 col-md-10 col-sm-12">
                     <div class="text-gray-part">
                         <div class="text">
                             <h3>Our Story</h3>
@@ -94,11 +92,129 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-
+    <!-- ============================================================== -->
+    <!-- counter -->
+    <!-- ============================================================== -->
+    <section class="counter">
+        <div class="container">
+            <div class="row">
+                <ul id="counter" class="row row-gap-3 justify-content-center">
+                    <li class="col-lg col-md-6 col-sm-12">
+                        <div class="counting-div d-flex align-items-center justify-content-center gap-1">
+                            <span class="count percent" data-count="1000">
+                                0
+                            </span>
+                            <span class="count-span"> Years</span>
+                        </div>
+                        <p class="name"> Experience </p>
+                    </li>
+                    <li class="col-lg col-md-6 col-sm-12">
+                        <div class="counting-div d-flex align-items-center justify-content-center gap-1">
+                            <span class="plus">+</span>
+                            <span class="count percent" data-count="200">
+                                0
+                            </span>
+                            <span class="count-span"> m </span>
+                        </div>
+                        <p class="name">
+                            The Annual Income
+                        </p>
+                    </li>
+                    <li class="col-lg col-md-6 col-sm-12">
+                        <div class="counting-div d-flex align-items-center justify-content-center gap-1">
+                            <span class="plus">+</span>
+                            <span class="count percent" data-count="100">
+                                0
+                            </span>
+                        </div>
+                        <p class="name">Brands</p>
+                    </li>
+                    <li class="col-lg col-md-6 col-sm-12">
+                        <div class="counting-div d-flex align-items-center justify-content-center gap-1">
+                            <span class="plus">+</span>
+                            <span class="count percent" data-count="100">
+                                0
+                            </span>
+                            <span class="count-span"> m </span>
+                        </div>
+                        <p class="name">Our Clients</p>
+                    </li>
+                    <li class="col-lg col-md-6 col-sm-12">
+                        <div class="counting-div d-flex align-items-center justify-content-center gap-1">
+                            <span class="plus">+</span>
+                            <span class="count percent" data-count="100">
+                                0
+                            </span>
+                            <span class="count-span"> k </span>
+                        </div>
+                        <p class="name">Emplyee</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================== -->
+    <!-- chef -->
+    <!-- ============================================================== -->
+     <section class="chef-section">
+        <div class="container position-relative">
+            <div class="row row-text justify-content-end pb-0">
+                <div class="col-lg-8 col-md-10 col-sm-12">
+                    <div class="text-gray-part">
+                        <div class="text">
+                            <h3>Chef Hissa Al Sulaiti</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur. Elit iaculis nibh tristique blandit id.
+                                Vulputate lacus quis platea placerat. Velit quis a ut et viverra porttitor auctor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-0">
+                <div class="col-lg-8 col-md-12 col-sm-12">
+                    <div class="bg-chef-banner overflow-hidden">
+                        <img class="img-fluid  h-100" src="assets/images/img/chef-bg-one.png" alt="image"/>
+                    </div>
+                </div>
+                <div class="image-chef" >
+                    <img class="w-100" src="assets/images/img/chef-one.png" alt="image" data-aos="zoom-in"/>
+                </div>
+            </div>
+            
+        </div>
+     </section>
+     <section class="chef-section">
+        <div class="container position-relative">
+            <div class="row row-text justify-content-start pb-0">
+                <div class="col-lg-8 col-md-10 col-sm-12">
+                    <div class="text-gray-part">
+                        <div class="text">
+                            <h3>Mr.Ali Al Obaidly</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur. Elit iaculis nibh tristique blandit id.
+                                Vulputate lacus quis platea placerat. Velit quis a ut et viverra porttitor auctor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-end pt-0 position-relative ">
+                <div class="col-lg-8 col-md-12 col-sm-12">
+                    <div class="bg-chef-banner overflow-hidden">
+                        <img class="img-fluid  h-100" src="assets/images/img/chef-bg-two.png" alt="image"/>
+                    </div>
+                </div>
+                <div class="image-chef-two">
+                    <img class="w-100" src="assets/images/img/chef-two.png" alt="image" data-aos="zoom-in"/>
+                </div>
+            </div>
+            
+        </div>
+     </section>
     <!-- ============================================================== -->
     <!--  vission mission goals -->
     <!-- ============================================================== -->
@@ -237,17 +353,18 @@
                     <div class="swiper-slide">
                         <div class="our-clients-card position-relative">
                             <div class="image-client overflow-hidden">
-                                <img class="img-fluid w-100 h-100" src="assets/images/img/client-slider.PNG" alt="image" loading="lazy"/>
+                                <img class="img-fluid w-100 h-100" src="assets/images/img/client-slider.PNG" alt="image"
+                                    loading="lazy" />
                             </div>
                             <div class="desc-client">
                                 <span class="d-block name">Rasha Ibrahim</span>
                                 <span class="d-block position">Accountant</span>
                                 <div class="evaluate d-flex align-items-center">
-                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon"/></a>
-                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon"/></a>
-                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon"/></a>
-                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon"/></a>
-                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon"/></a>
+                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon" /></a>
+                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon" /></a>
+                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon" /></a>
+                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon" /></a>
+                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon" /></a>
                                 </div>
                                 <p class="description">
                                     Lorem ipsum dolor sit amet consectetur. Sit id enim felis odio lorem urna.
@@ -259,17 +376,18 @@
                     <div class="swiper-slide">
                         <div class="our-clients-card position-relative">
                             <div class="image-client overflow-hidden">
-                                <img class="img-fluid w-100 h-100" src="assets/images/img/client1.PNG" alt="image" loading="lazy"/>
+                                <img class="img-fluid w-100 h-100" src="assets/images/img/client1.PNG" alt="image"
+                                    loading="lazy" />
                             </div>
                             <div class="desc-client">
                                 <span class="d-block name">Ibrahim ahmed</span>
                                 <span class="d-block position">Accountant</span>
                                 <div class="evaluate d-flex align-items-center">
-                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon"/></a>
-                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon"/></a>
-                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon"/></a>
-                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon"/></a>
-                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon"/></a>
+                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon" /></a>
+                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon" /></a>
+                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon" /></a>
+                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon" /></a>
+                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon" /></a>
                                 </div>
                                 <p class="description">
                                     Lorem ipsum dolor sit amet consectetur. Sit id enim felis odio lorem urna.
@@ -281,17 +399,18 @@
                     <div class="swiper-slide">
                         <div class="our-clients-card position-relative">
                             <div class="image-client overflow-hidden">
-                                <img class="img-fluid w-100 h-100" src="assets/images/img/client-slider.PNG" alt="image" loading="lazy"/>
+                                <img class="img-fluid w-100 h-100" src="assets/images/img/client-slider.PNG" alt="image"
+                                    loading="lazy" />
                             </div>
                             <div class="desc-client">
                                 <span class="d-block name">Rasha Ibrahim</span>
                                 <span class="d-block position">Accountant</span>
                                 <div class="evaluate d-flex align-items-center">
-                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon"/></a>
-                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon"/></a>
-                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon"/></a>
-                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon"/></a>
-                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon"/></a>
+                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon" /></a>
+                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon" /></a>
+                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon" /></a>
+                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon" /></a>
+                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon" /></a>
                                 </div>
                                 <p class="description">
                                     Lorem ipsum dolor sit amet consectetur. Sit id enim felis odio lorem urna.
@@ -303,17 +422,18 @@
                     <div class="swiper-slide">
                         <div class="our-clients-card position-relative">
                             <div class="image-client overflow-hidden">
-                                <img class="img-fluid w-100 h-100" src="assets/images/img/client-slider.PNG" alt="image" loading="lazy"/>
+                                <img class="img-fluid w-100 h-100" src="assets/images/img/client-slider.PNG" alt="image"
+                                    loading="lazy" />
                             </div>
                             <div class="desc-client">
                                 <span class="d-block name">Rasha Ibrahim</span>
                                 <span class="d-block position">Accountant</span>
                                 <div class="evaluate d-flex align-items-center">
-                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon"/></a>
-                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon"/></a>
-                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon"/></a>
-                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon"/></a>
-                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon"/></a>
+                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon" /></a>
+                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon" /></a>
+                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon" /></a>
+                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon" /></a>
+                                    <a href="#"><img src="assets/images/icon/star.svg" alt="icon" /></a>
                                 </div>
                                 <p class="description">
                                     Lorem ipsum dolor sit amet consectetur. Sit id enim felis odio lorem urna.
