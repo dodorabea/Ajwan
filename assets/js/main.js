@@ -75,6 +75,33 @@
       prevEl: ".swiper-button-prev.meet-brains",
     },
   });
+ /*=====our Clients=====*/
+  var swiperClients = new Swiper(".mySwiper.clients", {
+    slidesPerView: 1,
+    spaceBetween: 40,
+    loop: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      400: {
+        slidesPerView: 1,
+      },
+      880: {
+        slidesPerView: 1,
+      },
+      1025: {
+        slidesPerView: 1.25,
+      },
+      1366: {
+        slidesPerView: 2,
+      },
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 })(jQuery);
 const navbarMenu = document.getElementById("menu");
 const burgerMenu = document.getElementById("burger");
