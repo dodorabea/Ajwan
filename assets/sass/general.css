@@ -407,6 +407,11 @@ html[dir=ltr] #preloader-background {
   animation-timing-function: ease-out;
   animation-fill-mode: both;
 }
+@media (min-width: 992px) {
+  .header {
+    padding: 0.5rem 0;
+  }
+}
 @media (max-width: 991.98px) {
   .header {
     padding: 0 1rem;
@@ -1130,6 +1135,32 @@ html[dir=ltr] .meetOur-brains .our-brain-card .info-desc {
 /*-----------------------
     meet-founders
 -------------------------*/
+html[dir=rtl] .card-founder:first-child .card-body {
+  border-radius: 0 8.4375rem 6.5625rem 8.75rem;
+}
+html[dir=rtl] .card-founder:first-child .card-body::after {
+  border-radius: 8.4375rem 0rem 6.5625rem 8.75rem;
+}
+html[dir=rtl] .card-founder:last-child .card-body {
+  border-radius: 6.4375rem 0rem 6.5625rem 6.5rem;
+}
+html[dir=rtl] .card-founder:last-child .card-body::after {
+  border-radius: 0 6.4375rem 6.5625rem 6.5rem;
+}
+
+html[dir=ltr] .card-founder:first-child .card-body {
+  border-radius: 0rem 8.4375rem 6.5625rem 8.75rem;
+}
+html[dir=ltr] .card-founder:first-child .card-body::after {
+  border-radius: 0rem 8.4375rem 6.5625rem 8.75rem;
+}
+html[dir=ltr] .card-founder:last-child .card-body {
+  border-radius: 6.4375rem 0rem 6.5625rem 6.5rem;
+}
+html[dir=ltr] .card-founder:last-child .card-body::after {
+  border-radius: 6.4375rem 0rem 6.5625rem 6.5rem;
+}
+
 .flex-card-founder {
   background: url(../images/img/water-mark.png);
   background-repeat: no-repeat;
@@ -1150,18 +1181,6 @@ html[dir=ltr] .meetOur-brains .our-brain-card .info-desc {
 
 .card-founder {
   border-radius: 7.4375rem;
-}
-.card-founder:first-child .card-body {
-  border-radius: 0rem 8.4375rem 6.5625rem 8.75rem;
-}
-.card-founder:first-child .card-body::after {
-  border-radius: 0rem 8.4375rem 6.5625rem 8.75rem;
-}
-.card-founder:last-child .card-body {
-  border-radius: 6.4375rem 0rem 6.5625rem 6.5rem;
-}
-.card-founder:last-child .card-body::after {
-  border-radius: 6.4375rem 0rem 6.5625rem 6.5rem;
 }
 .card-founder .card-body {
   height: 550px;
@@ -1633,6 +1652,11 @@ html[dir=ltr] .our-story .text-gray-part .text h3::after {
     padding: 0rem 0 4rem 0;
   }
 }
+@media (max-width: 499.98px) {
+  .chef-section .row:first-child {
+    margin-bottom: 2rem;
+  }
+}
 @media (min-width: 991.98px) {
   .chef-section .row-text {
     margin-bottom: -30px;
@@ -1736,7 +1760,7 @@ html[dir=ltr] .chef-section .image-chef {
 }
 @media (max-width: 499.98px) {
   .chef-section .image-chef {
-    width: 110px;
+    width: 160px;
   }
 }
 .chef-section .image-chef-two {
@@ -1764,7 +1788,7 @@ html[dir=ltr] .chef-section .image-chef-two {
 }
 @media (max-width: 499.98px) {
   .chef-section .image-chef-two {
-    width: 110px;
+    width: 145px;
   }
 }
 
@@ -1817,6 +1841,68 @@ html[dir=ltr] .chef-section .image-chef-two {
   .about-goals .box p {
     font-size: 1rem;
   }
+}
+
+/*-----------------------
+    breadcrumb
+-------------------------*/
+.breadcrumb {
+  min-height: 350px;
+  background: #010101;
+}
+.breadcrumb h3 {
+  margin-bottom: 1.5rem;
+  font-family: "SourceSerifPro-Semibold";
+}
+@media (min-width: 992px) {
+  .breadcrumb h3 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .breadcrumb h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  html[dir=rtl] .breadcrumb ul {
+    padding-right: 1.5rem;
+  }
+  html[dir=ltr] .breadcrumb ul {
+    padding-left: 1.5rem;
+  }
+}
+.breadcrumb ul span, .breadcrumb ul a, .breadcrumb ul li {
+  font-size: 1.1rem;
+}
+
+/*-----------------------
+    terms-and-conditions 
+-------------------------*/
+.terms-and-conditions {
+  padding: 3rem 0;
+}
+.terms-and-conditions .item {
+  margin-bottom: 1.5rem;
+}
+.terms-and-conditions .item:last-child {
+  margin-bottom: 0;
+}
+.terms-and-conditions .item h3 {
+  color: #010101;
+  font-family: "SourceSerifPro-Semibold";
+}
+.terms-and-conditions .item p {
+  color: #777D74;
+  margin-bottom: 0.75rem;
+}
+.terms-and-conditions .item ul {
+  list-style: inside;
+}
+.terms-and-conditions .item ul li {
+  font-size: 0.894rem;
+  color: #777D74;
+  margin-bottom: 0.75rem;
 }
 
 /*-----------------------
