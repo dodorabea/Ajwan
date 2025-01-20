@@ -122,6 +122,69 @@
         </div>
 
     </section>
+     <!-- ============================================================== -->
+    <!-- counter -->
+    <!-- ============================================================== -->
+    <section class="counter pt-0">
+        <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-lg-10 col-md-12">
+                <ul id="counter" class="row row-gap-3 justify-content-center">
+                    <li class="col-lg col-md-6 col-sm-12">
+                        <div class="counting-div d-flex align-items-center justify-content-center gap-1">
+                            <span class="count percent" data-count="1000">
+                                0
+                            </span>
+                            <span class="count-span"> Years</span>
+                        </div>
+                        <p class="name"> Experience </p>
+                    </li>
+                    <li class="col-lg col-md-6 col-sm-12">
+                        <div class="counting-div d-flex align-items-center justify-content-center gap-1">
+                            <span class="plus">+</span>
+                            <span class="count percent" data-count="200">
+                                0
+                            </span>
+                            <span class="count-span"> m </span>
+                        </div>
+                        <p class="name">
+                            The Annual Income
+                        </p>
+                    </li>
+                    <li class="col-lg col-md-6 col-sm-12">
+                        <div class="counting-div d-flex align-items-center justify-content-center gap-1">
+                            <span class="plus">+</span>
+                            <span class="count percent" data-count="100">
+                                0
+                            </span>
+                        </div>
+                        <p class="name">Brands</p>
+                    </li>
+                    <li class="col-lg col-md-6 col-sm-12">
+                        <div class="counting-div d-flex align-items-center justify-content-center gap-1">
+                            <span class="plus">+</span>
+                            <span class="count percent" data-count="100">
+                                0
+                            </span>
+                            <span class="count-span"> m </span>
+                        </div>
+                        <p class="name">Our Clients</p>
+                    </li>
+                    <li class="col-lg col-md-6 col-sm-12">
+                        <div class="counting-div d-flex align-items-center justify-content-center gap-1">
+                            <span class="plus">+</span>
+                            <span class="count percent" data-count="100">
+                                0
+                            </span>
+                            <span class="count-span"> k </span>
+                        </div>
+                        <p class="name">Emplyee</p>
+                    </li>
+                </ul>
+               </div>
+            </div>
+        </div>
+    </section>
     <!-- ============================================================== -->
     <!--  Meet the Founders -->
     <!-- ============================================================== -->
@@ -341,6 +404,40 @@
     <script src="assets/aos/js/aos.js"></script>
     <!--Main Js-->
     <script src="assets/js/main.js"></script>
+    <script>
+        var counted = 0;
+$(window).scroll(function() {
+
+  var oTop = $('#counter').offset().top - window.innerHeight;
+  if (counted == 0 && $(window).scrollTop() > oTop) {
+    $('.count').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+
+        {
+
+          duration: 10000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
+
+        });
+    });
+    counted = 1;
+  }
+
+});
+    </script>
 </body>
 
 </html>
