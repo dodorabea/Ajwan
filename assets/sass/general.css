@@ -722,6 +722,101 @@ header.header-position-relative .menu-inner .menu-item .menu-link.active {
 }
 
 /*-----------------------
+    About-Us page
+-------------------------*/
+.meetOur-brains {
+  padding: 4rem 0;
+}
+.meetOur-brains .our-brain-card {
+  border-radius: 1.5rem;
+  border: 1px solid #220606;
+}
+@media (min-width: 400px) {
+  .meetOur-brains .our-brain-card {
+    height: 400px;
+  }
+}
+.meetOur-brains .our-brain-card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.meetOur-brains .our-brain-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(179deg, rgba(8, 7, 43, 0) 53.71%, rgba(0, 0, 0, 0.89) 95.21%);
+}
+html[dir=rtl] .meetOur-brains .our-brain-card::after {
+  right: 0;
+  left: 0;
+}
+html[dir=ltr] .meetOur-brains .our-brain-card::after {
+  right: 0;
+  left: 0;
+}
+.meetOur-brains .our-brain-card .info-desc {
+  z-index: 11;
+  position: absolute;
+  top: unset;
+  bottom: 1.44rem;
+}
+html[dir=rtl] .meetOur-brains .our-brain-card .info-desc {
+  right: 0.94rem;
+  left: unset;
+}
+html[dir=ltr] .meetOur-brains .our-brain-card .info-desc {
+  right: unset;
+  left: 0.94rem;
+}
+.meetOur-brains .our-brain-card .info-desc .name {
+  font-size: 1.5625rem;
+  font-family: "SourceSerifPro-Bold";
+  letter-spacing: 0.03125rem;
+}
+.meetOur-brains .our-brain-card .info-desc .title-position {
+  text-transform: capitalize;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after,
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  content: " ";
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  right: auto;
+}
+@media (min-width: 768px) {
+  .swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: -9px;
+  }
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  left: auto;
+}
+@media (min-width: 768px) {
+  .swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: -9px;
+  }
+}
+
+.swiper-button-next.meet-brains,
+.swiper-button-prev.meet-brains {
+  width: 2.6875rem;
+  height: 2.6875rem;
+  border-radius: 100%;
+  background: #E0DDDD;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  top: 60%;
+}
+
+/*-----------------------
     contact-Us
 -------------------------*/
 .contact-Us {
@@ -1256,6 +1351,9 @@ html[dir=ltr] .brand-video::after {
 /*-----------------------
     about-goals
 -------------------------*/
+.about-goals {
+  padding: 4rem 0;
+}
 .about-goals .box img {
   height: 3.75rem;
   display: block;
