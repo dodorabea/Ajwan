@@ -103,18 +103,6 @@
     },
   });
 
-
-
-
-
-
-
-
-
-
-
-
-
 })(jQuery);
 const navbarMenu = document.getElementById("menu");
 const burgerMenu = document.getElementById("burger");

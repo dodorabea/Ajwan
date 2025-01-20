@@ -1188,6 +1188,18 @@ header {
     }
 }
 /*-----------------------
+    brands-part 
+-------------------------*/
+.brands-part{
+    padding: 40px 0;
+    .brands-box{
+        height: 150px;
+        img{
+            height: 100%;
+        }
+    }
+}
+/*-----------------------
     brands-section 
 -------------------------*/
 .brands-section {

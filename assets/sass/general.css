@@ -1395,6 +1395,19 @@ html[dir=ltr] .brand-video::after {
 }
 
 /*-----------------------
+    brands-part 
+-------------------------*/
+.brands-part {
+  padding: 40px 0;
+}
+.brands-part .brands-box {
+  height: 150px;
+}
+.brands-part .brands-box img {
+  height: 100%;
+}
+
+/*-----------------------
     brands-section 
 -------------------------*/
 .brands-section {
