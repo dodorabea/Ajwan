@@ -8,8 +8,8 @@ $font-family-semibold: 'SourceSerifPro-Semibold';
 $font-family-Bold: 'SourceSerifPro-Bold';
 
 ::selection {
-    background: map_get($theme-colors, dark);
-    color: map_get($theme-colors, white);
+    background: #000;
+    color: #fff;
 }
 
 ::-webkit-scrollbar {
